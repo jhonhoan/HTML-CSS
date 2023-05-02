@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(21, 216, 118);
+
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p{
+            color: rgb(251, 255, 2);
+            display: block;
+            background-color: rgb(13, 113, 121);
+            width: 80px;
+        }
+        div:hover{
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>Te Amo! 
+        </p>
+    </div>
+    <a href="pseudoclasse.html"> <p>RETORNAR</p></a>
+</body>
+</html>

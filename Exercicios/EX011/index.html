@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site me vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="Imagem/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio</p>
+    <audio preload="auto" controls loop> 
+        <source  src="midia/MusicaTeste.mp3" type="audio/mpeg">   
+    <p>Infelizmente seu audio não é compativel pra reprodução nesse navegador <a href="midia/MusicaTeste.mp3"> baixe seu audio aqui</a> </p> </audio>
+    <video src="Vídeo do WhatsApp de 2023-04-11 à(s) 20.49.51.mp4"></video>
+ </audio>
+</body>
+</html>
