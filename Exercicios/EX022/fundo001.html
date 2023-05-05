@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-image: url(imagens/pngwing.com\ \(7\).png);
+            height: 300px;
+            box-shadow: 1PX 1PX 50PX rgba(0, 0, 0, 0.61);
+        }
+
+        header > h1{
+            height: 100%;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-family: arial;
+            
+
+        }
+
+        .quadrado{
+            display: inline-block;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            border-radius: 5%;
+            margin: 0px 15px;
+        }
+
+        #q1{
+            background-color: brown;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+         
+
+        #q2{
+            background-image: linear-gradient(to bottom, rgb(195, 0, 255) , blue);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #q3{
+            background-image: url(imagens/pattern003.png);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HELLO, WORLD!</h1>
+    </header>
+
+    <div class="quadrado" id="q1">
+        <h1>OLÁ, MUNDO!</h1>
+    </div>
+
+    <div class="quadrado" id="q2">
+        <h1>OLÁ, MUNDO!</h1>
+    </div>
+
+    <div class="quadrado" id="q3">
+        <h1>OLÁ, MUNDO!</h1>
+    </div>
+</body>
+</html>
