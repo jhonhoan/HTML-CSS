@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'google';
+    src: url(fontes/Product\ Sans\ Bold.ttf) format(opentype);
+}
+
+:root{
+    --fonte: 'google'
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: var(--fonte);
+    background-color: rgb(190, 154, 53);
+}
+
+header{
+    padding: 10px;
+    display:flex;
+    background-color: rgb(255, 218, 54);
+    color: white;
+    height: 200px;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   font-variant: small-caps;
+   
+
+}
+
+header h1{
+    text-align: center;
+    font-size: 9vw;
+}
+
+a{ 
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header p{
+    font-size: 4vw;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+}
+
+section{
+    font-size: 3.5vw;
+    padding: 50px;
+  
+}
+
+.imagem{
+    box-shadow: inset 1px 1px 20px rgb(0, 0, 0);
+   color: white;
+}
+
+.imagem p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.274);
+
+}
+
+#img1{
+ 
+    background: url(imagem/manga.jpg) center left no-repeat fixed ;
+    background-size:cover;
+}
+
+#img2{
+    background: url(imagem/sword.png) left center no-repeat fixed;
+    background-size: cover;
+}
+
+.normal{
+    background-color: white;
+   
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: rgb(22, 24, 24);
+    color: white;
+}
