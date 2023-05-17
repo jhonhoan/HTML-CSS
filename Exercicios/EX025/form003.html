@@ -5,42 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 255, 136);
+        }
+        body{
+            background-color: rgb(31, 32, 46);
+            
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            
+        }
+        label{
+            font-weight: bolder;
+        }
+        input{
+            height: 4vh;
+            color: rgba(0, 0, 0, 0.979);
+            border-radius: 5px;
+            border:none;
+        }
+
+        fieldset{
+            background-color: rgb(14, 147, 255);
+            width: 300px;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+        
+        }
+       .criar{
+                display: flex;
+                justify-content: center;
+       }
+
+       #criar{
+        font-size: 30px;
+        font-weight: bolder;
+        width: 50%;
+        height: 8vh;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(43, 226, 119);
+        color: white;
+
+       }
+
+    </style>
 </head>
 <body>
-        <h1>Teste de formulário 3</h1>
-        <form action="cadastro.php" method="get" autocomplete="on" >
-            <p><label for="inome">Nome</label>
-
-            <input type="text" name="nome" id="inome" required min="6" max="15" placeholder="Nome" autocomplete="name">
-        </p>
-
-            <p>
-                <label for="isenha">Senha</label>
-
-                <input type="password" name="senha" id="isenha" minlength="8" maxlength="15" placeholder="minimo 8 caracteres" autocomplete="new-password">
-
-            </p>
-
-            <p>
-
-                <label for="imedia">Level</label>
-                <input type="number" name="media" id="imedia" min="0" max="100"  required value="5">
-
-            </p>
+       
 
 
-            <p>
-                <label for="idata">data de nascimento</label>
-                <input type="date" required>
-            </p>
+        <main>
+            <form action="heroi.html" method="get" autocomplete="on" >
+                <fieldset>
+                    <legend> <h1>Crie seu heroi</h1></legend>
+                    <p>
+                        <label for="iusu">Usuario</label>
+                        <input type="text" name="ususario" id="iusu" required minlength="5" maxlength="20" placeholder="usuario" autocomplete="username">
+                    </p>
+                        <p>
+                            <label for="idade">Idade</label>
+                            <input type="number" name="age" id="idade" min="0" max="100" required autocomplete="cc-number" value="0"  >
+                        </p>
+                    <P>
+                        <label for="idata">Data de nascimento do heroi</label>
+                        <input type="date" name="data" id="idata">
+                    </P>
+                    <p>
+                        <label for="itempo">horario que irá começar</label>
+                        <input type="time" name="tempo" id="itempo" autocomplete="#">
+                    </p>
+                </fieldset>
 
-            <p>
+                <p class="criar">
+                    <input  type="submit" value="Criar" id="criar">
+                </p>
 
-                <input type="submit" value="Enviar">
-                <input type="reset" value="limpar">
-
-            </p>
-
-        </form>
+            </form>
+        </main>
 </body>
 </html>
