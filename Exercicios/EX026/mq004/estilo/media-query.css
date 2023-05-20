@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* Typical Device Breackpoints
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+
+*/
+
+@media print {
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        font-size: 20px;
+        content: "obrigado por imprimir e se divirta";
+        text-decoration: overline;
+    }
+
+    
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 600px) {
+    body {
+        background-image: url(../imagens/back-phone.jpg);
+    }
+
+    #phone {
+        display: block;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1367px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
