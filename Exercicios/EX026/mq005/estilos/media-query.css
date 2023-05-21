@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@media screen and (min-width:368px) and (max-width:600px){
+    #menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    nav ul > li{
+        display: inline-block;
+    }
+    main{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+    #menu{
+        display: none;
+    }
+    nav{
+       
+        display: block;
+    }
+    nav ul > li{
+        display: inline-block;
+    }
+  
+}
+
+
+@media screen and (min-width:769px) and (max-width:1366px){
+    #menu{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav ul > li{
+        display: inline-block;
+    }
+}
+
+
+@media screen and (min-width: 1366px){
+    #menu{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav ul > li{
+        display: inline-block;
+    }
+}
